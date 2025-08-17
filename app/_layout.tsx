@@ -22,11 +22,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (loaded) {
-      // Add a 3-second delay to see splash screen
-      setTimeout(() => {
-        setAppReady(true);
-        SplashScreen.hideAsync();
-      }, 3000);
+      SplashScreen.hideAsync();
     }
   }, [loaded]);
 
